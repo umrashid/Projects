@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<!--  CREATED BY Jonas Schmedtmann FROM UDEMY
+ MODIFIED BY UMAIR RASHID -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active" id="panel-0">
+                <div class="winner" id="winner-0">Winner!</div>
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel" id="panel-1">
+                <div class="winner" id="winner-1">Winner!</div>
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            
+            <button onclick="newGame()" class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button id="roll" class="btn-roll" onclick="rollDice()"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button id="hold" onclick ="holdScore()" class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            <form class="enterscore">
+            Win Score(Default: 100):
+            <input type="text" id="inputscore">
+            </form>
+            <img id="diceimage" src="dice-5.png" alt="Dice" class="dice">
+            <img id="diceimage1" src="dice-5.png" alt="Dice" class="dice">
+        </div>
+        
+        <script src="app.js">
+        
+        </script>
+    </body>
+</html>
