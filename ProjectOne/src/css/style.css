@@ -1,0 +1,42 @@
+body {
+  background-image: url("/img/home.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 800px;
+  margin: 0; }
+
+.img-color-white {
+  font-size: 40px;
+  color: white; }
+
+.img-fluid {
+  opacity: 0.8; }
+
+#navigation {
+  opacity: 0.8;
+  border-width: 3px !important; }
+
+#main {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 700px; }
+
+#mainContent div {
+  color: white; }
+
+#mainContent > div > div > i {
+  font-size: 45px; }
+
+#explore, #create, #share {
+  /*height: 250px;*/ }
+
+#contactus {
+  height: 160px; }
+
+#expcon, #createpassion, #sharewhat {
+  /*height: 425px;*/ }
+
+.img-color-black {
+  font-size: 40px;
+  color: black; }
+
+.signuptoday {
+  max-width: 350px; }
