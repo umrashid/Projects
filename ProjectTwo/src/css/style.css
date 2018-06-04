@@ -1,0 +1,59 @@
+.full {
+  min-width: 100%; }
+
+.fontSize {
+  font-size: 25px; }
+
+.maincontent {
+  background-image: url("/img/mountain.jpg");
+  margin-top: 86px;
+  min-height: 400px;
+  background: cover; }
+
+.layover {
+  background-color: rgba(71, 157, 175, 0.7);
+  min-height: 400px; }
+
+.inputbox {
+  border-radius: 0px;
+  font-size: 25px; }
+
+.bluecolor {
+  background-color: #479daf;
+  color: #479daf; }
+
+.style1 {
+  border: 1px solid #479daf !important; }
+  .style1 h3 {
+    color: #479daf; }
+
+.style2 {
+  background-color: #479daf;
+  color: white;
+  border: 1px solid #479daf !important; }
+
+.blcolor {
+  color: #479daf; }
+
+.zeromargin {
+  margin: 2px; }
+
+.blacktext {
+  color: black !important; }
+
+.socialmedia {
+  font-size: 25px; }
+
+.imgmove {
+  position: relative;
+  width: 100px;
+  bottom: 30px; }
+
+.footer {
+  background-color: #479daf; }
+
+.cardshover:hover {
+  background-color: #479daf;
+  color: white !important; }
+  .cardshover:hover .card-body .socialmedia .blcolor {
+    color: white; }

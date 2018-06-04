@@ -1,0 +1,78 @@
+$allcolor : rgba(71, 157, 175, 1);
+
+.full{
+  min-width: 100%;
+}
+.fontSize{
+  font-size: 25px;
+}
+.maincontent{
+  background-image: url("/img/mountain.jpg");
+  margin-top: 86px;
+  min-height: 400px;
+  background: cover;
+
+}
+.layover{
+  background-color: rgba(71, 157, 175, 0.7);
+  min-height: 400px;
+}
+
+.inputbox{
+ border-radius: 0px;
+ font-size: 25px;
+}
+
+.bluecolor{
+  background-color:$allcolor;
+  color: $allcolor;
+}
+
+.style1{
+  h3{
+  color: $allcolor;}
+  border: 1px solid $allcolor !important;
+
+
+}
+.style2{
+  background-color: $allcolor;
+  color: white;
+  border: 1px solid $allcolor !important;
+
+}
+.blcolor{
+  color: $allcolor ;
+}
+.zeromargin{
+  margin: 2px;
+}
+
+.blacktext{
+  color: black !important;
+}
+
+.socialmedia{
+  font-size: 25px;
+
+}
+
+.imgmove{
+  position: relative;
+  width: 100px;
+  bottom: 30px;
+}
+.footer{
+  background-color: $allcolor;
+}
+.cardshover:hover{
+  background-color: $allcolor;
+  color: white !important;
+  .card-body{
+    .socialmedia{
+      .blcolor{
+        color: white;
+      }
+    }
+  }
+}
