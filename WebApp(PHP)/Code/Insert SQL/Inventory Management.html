@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&data=15 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>Data as 15 
+
+
+
+<title>Inventory Management</title>
+
+<!-- Including all the links -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--W3 css -->
+<link rel="stylesheet" href="./Inventory Management_files/w3.css">
+<!--Fonts and Font Awesome -->
+<link rel="stylesheet" href="./Inventory Management_files/css">
+<link rel="stylesheet" href="./Inventory Management_files/font-awesome.min.css">
+<link href="./Inventory Management_files/css(1)" rel="stylesheet">
+<!--Bootstrap -->
+<link rel="stylesheet" href="./Inventory Management_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- DataTables -->
+<link rel="stylesheet" type="text/css" href="./Inventory Management_files/jquery.dataTables.css">
+<link rel="stylesheet" href="./Inventory Management_files/table.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+
+<!-- Including the Navbar -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="http://localhost/Inventory/login.php" class="w3-bar-item w3-button w3-wide">INVENTORY MANAGEMENT</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&amp;data=15" class="w3-bar-item w3-button"><i class="fa fa-plus-square"></i> ADD</a>
+      <a href="http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&amp;data=15" class="w3-bar-item w3-button"><i class="fa fa-minus-circle"></i> REMOVE</a>
+      <a href="http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&amp;data=15" class="w3-bar-item w3-button"><i class="fa fa-eye"></i> SEARCH</a>
+      <a href="http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&amp;data=15" class="w3-bar-item w3-button"><i class="fa fa-key"></i> CHANGE PASSWORD</a>
+      <a href="http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&amp;data=15" class="w3-bar-item w3-button"><i class="fa fa-sign-out"></i> SIGN OUT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&amp;data=15" onclick="w3_close()" class="w3-bar-item w3-button">ADD</a>
+  <a href="http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&amp;data=15" onclick="w3_close()" class="w3-bar-item w3-button">REMOVE</a>
+  <a href="http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&amp;data=15" onclick="w3_close()" class="w3-bar-item w3-button">SEARCH</a>
+  <a href="http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&amp;data=15" onclick="w3_close()" class="w3-bar-item w3-button">CHANGE PASSWORD</a>
+  <a href="http://localhost/Inventory/byProductID.php?choices-single-defaul=byProductID.php&amp;data=15" onclick="w3_close()" class="w3-bar-item w3-button">SIGN OUT</a>
+</nav>
+<div id="showTable">
+    ?
+                            ?
+                            ?
+                            ?
+                            ?
+                            ?
+                            ?
+                            ?
+                            ?
+                            ?
+                            <table id="vieTable" class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">Store Number</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     
+                        <tr>
+                            <td> 6601 </td><td> V8 Pet </td>
+                            <td> 3 </td>
+                            <td> Coquitlam </td>
+                            <td> 604-913-5944 </td>
+                        </tr>
+                     
+                        <tr>
+                            <td> 6602 </td><td> V8 Pet </td>
+                            <td> 0 </td>
+                            <td> Vancouver </td>
+                            <td> 604-240-9150 </td>
+                        </tr>
+                     
+                        <tr>
+                            <td> 6603 </td><td> V8 Pet </td>
+                            <td> 11 </td>
+                            <td> Vancouver </td>
+                            <td> 604-749-3181 </td>
+                        </tr>
+                     
+                        <tr>
+                            <td> 6604 </td><td> V8 Pet </td>
+                            <td> 5 </td>
+                            <td> Port Coquitlam </td>
+                            <td> 604-573-3388 </td>
+                        </tr>
+                     
+                        <tr>
+                            <td> 6605 </td><td> V8 Pet </td>
+                            <td> 9 </td>
+                            <td> Port Coquitlam </td>
+                            <td> 604-047-8863 </td>
+                        </tr>
+                     
+                        <tr>
+                            <td> 6606 </td><td> V8 Pet </td>
+                            <td> 2 </td>
+                            <td> North Vancouver </td>
+                            <td> 604-926-7023 </td>
+                        </tr>
+                     
+                        <tr>
+                            <td> 6607 </td><td> V8 Pet </td>
+                            <td> 14 </td>
+                            <td> Coquitlam </td>
+                            <td> 604-781-8959 </td>
+                        </tr>
+                     
+                        <tr>
+                            <td> 6608 </td><td> V8 Pet </td>
+                            <td> 20 </td>
+                            <td> Port Coquitlam </td>
+                            <td> 604-813-3018 </td>
+                        </tr>
+                     
+                        <tr>
+                            <td> 6609 </td><td> V8 Pet </td>
+                            <td> 9 </td>
+                            <td> Surrey </td>
+                            <td> 604-223-8481 </td>
+                        </tr>
+                     
+                        <tr>
+                            <td> 6610 </td><td> V8 Pet </td>
+                            <td> 15 </td>
+                            <td> Vancouver </td>
+                            <td> 604-974-1533 </td>
+                        </tr>
+                                    </tbody>
+    </table>
+
+
+
+
+ 
+<!--Jquery -->
+<script src="./Inventory Management_files/jquery.min.js.download"></script>
+ <!--Navbar -->
+ <script src="./Inventory Management_files/navbar.js.download"></script>
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="./Inventory Management_files/jquery.dataTables.js.download"></script>
+<script> $(document).ready( function () {
+    $('#vieTable').Datatable();
+} );
+</body>
+</html>
+</script></div></body></html>
