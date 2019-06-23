@@ -5,9 +5,15 @@ import java.sql.SQLException;
 
 public class User {
 	private String userid;
-	private String password;
-	private String name;
-	private String email;
+
+	public String getUserid() {
+		return userid;
+	}
+
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
+
 	Database db = new Database();
 	
 	public User(String userid){
