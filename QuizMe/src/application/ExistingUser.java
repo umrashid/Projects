@@ -28,10 +28,15 @@ public class ExistingUser extends User {
 			try {
 				rs.next();
 				System.out.println("Password: " + rs.getString("password"));
-				
-				return true;
+				String databasePassword = rs.getString("password");
+				if(databasePassword.equals(getPassword())){
+					System.out.println("Password Verified!");
+					return true;
+				}else{
+					System.out.println("Incorrect Password!");
+					return false;
+				}
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				System.out.println("Verify Password query couldn't be run");
 				return false;
 			}
