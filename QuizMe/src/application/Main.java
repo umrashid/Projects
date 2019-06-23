@@ -24,20 +24,22 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
-		Database db = new Database();
-		ResultSet rs = db.runQuery("select * from users");
-		try {
-			while(rs.next()){
-			     //Retrieve by column name
-			     String id  = rs.getString("userid");
-  
-			     //Display values
-			     System.out.println("ID: " + id);
-			  }
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		Database db = new Database();
+//		ResultSet rs = db.runQuery("select * from users");
+//		try {
+//			while(rs.next()){
+//			     //Retrieve by column name
+//			     String id  = rs.getString("userid");
+//  
+//			     //Display values
+//			     System.out.println("ID: " + id);
+//			  }
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		User newuser = new User("player1");
+		System.out.println(newuser.userExists());
 		launch(args);
 		
 		
