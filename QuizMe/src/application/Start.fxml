@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <TitledPane animated="false" layoutX="-72.0" layoutY="-121.0" prefHeight="417.0" prefWidth="422.0" text="untitled">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="144.0" layoutY="84.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="133.0" text="Create a New User" />
+                  <Button layoutX="144.0" layoutY="210.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="133.0" text="Sign in " />
+                  <Label alignment="TOP_CENTER" graphicTextGap="6.0" layoutX="192.0" layoutY="153.0" prefHeight="27.0" prefWidth="37.0" text="OR">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" graphicTextGap="6.0" layoutX="60.0" layoutY="14.0" prefHeight="32.0" prefWidth="285.0" text="Welcome to QuizMe">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
