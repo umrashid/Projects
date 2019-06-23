@@ -24,7 +24,6 @@ public class Database {
 		ResultSet rs = null;
 		try {
 			rs = this.stmt.executeQuery(query);
-			System.out.println("Running Query Successful");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("Running Query Failed");

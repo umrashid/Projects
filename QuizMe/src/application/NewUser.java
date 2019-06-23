@@ -12,7 +12,7 @@ public class NewUser extends User {
 	}
 
 	public void setPassword(String password) {
-		this.password = password;
+		this.password = password.trim();
 	}
 
 	public String getName() {
@@ -20,7 +20,7 @@ public class NewUser extends User {
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.name = name.trim();
 	}
 
 	public String getEmail() {
@@ -28,14 +28,14 @@ public class NewUser extends User {
 	}
 
 	public void setEmail(String email) {
-		this.email = email;
+		this.email = email.trim();
 	}
 	
 	public NewUser(String userid, String password, String name, String email){
-		super(userid);
-		this.password = password;
-		this.name = name;
-		this.email = password;
+		super(userid.trim());
+		this.password = password.trim();
+		this.name = name.trim();
+		this.email = email.trim();
 	}
 	
 	public void createUser(){

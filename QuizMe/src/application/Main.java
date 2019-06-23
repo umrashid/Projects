@@ -38,8 +38,8 @@ public class Main extends Application {
 //			// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
-		NewUser newuser = new NewUser("player5","hello", "John", "john@yahoo.ca");
-		newuser.createUser();
+		ExistingUser user = new ExistingUser("player5","hello");
+		user.verifyPassword();
 		launch(args);
 		
 		
